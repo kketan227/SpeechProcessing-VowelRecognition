@@ -1,0 +1,56 @@
+for (int c =0;c<5;c++){
+				R=AutoCorrelation(c+(stabframe-2));
+				long double* A=Durbin(R);
+				long double* cep_temp=Cepstral(A);
+				//get the cepstral values right here after this we update it with raised sine window
+				cep[a][b][c] = (cep_temp);
+				//cep[a][b][c] = raisedSineWindow(cep_temp); //At cep[vowel][utterance][frame] we have the raised sine windowed cepstral 12 coeffs
+			}
+			that part is blow
+
+			//system("pause");
+
+			//ifstream lol;
+			//lol.open("samples.txt");
+			//if (!lol){
+			//	cout << "\n**File failed to open**\n\n";
+			//	fin.clear();
+			//	cout<<"Press any key to continue"<<endl;
+			//	getchar();
+			//	exit(2);	
+			//}
+			//int linenum=0;
+			//samplecount=0;
+			//if (lol.is_open()){
+			//	while ( !lol.eof() ){ 
+			//		getline (lol,line);
+			//		double in;
+			//		try{
+			//
+			//			samples [samplecount] = stold(line.c_str());
+			//			cout<<samples[samplecount]<<endl;
+			//		}
+			//		catch (...){
+			//			cout<<"Some Error"<<endl;
+			//		}
+			//		if(abs(samples[samplecount])>MaxAmp)
+			//			MaxAmp=abs(samples[samplecount]);
+			//		linenum++;
+			//		samplecount+=1;
+
+			//	}
+
+			//	fin.close();
+			//}
+
+			//R=AutoCorrelation(0);
+			//long double* A=Durbin(R);
+			//long double* cep_temp=Cepstral(A);
+			////get the cepstral values right here after this we update it with raised sine window
+			////cep[a][b][c] = (cep_temp);
+			////cep[a][b][c] = raisedSineWindow(cep_temp); //At cep[vowel][utterance][frame] we have the raised sine windowed cepstral 12 coeffs
+			//
+			//system("pause");
+		}
+	} That part is above
+	cout<<"Stage 1"<<endl;
